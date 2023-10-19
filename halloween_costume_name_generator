@@ -1,0 +1,6 @@
+print("Welcome to Halloween costume generator")
+horror_movie = input("What is your favorite horror movie?\n")
+print(horror_movie)
+favourite_character = input("What is the name of your favouirte movie character ever?\n")
+print(favourite_character)
+print("You could be " + horror_movie + "'s'" + " " + favourite_character + "!")
