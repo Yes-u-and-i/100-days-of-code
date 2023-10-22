@@ -1,0 +1,12 @@
+print("Checking if an input is odd or even")
+  
+# Input
+number = int(input("Enter a number: "))
+# To find remainders in Python we use "Module" or % sign.
+# When divided by 2 using modulo, it either gives 0 which means even or 1 as a remainder.
+# Process
+remainder = number % 2
+if remainder == 0:
+    print("The number is even.")
+else:
+    print("The number is odd.")
