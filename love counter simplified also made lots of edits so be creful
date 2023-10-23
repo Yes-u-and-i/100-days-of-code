@@ -1,0 +1,34 @@
+print("Welcome to the Love Calculator! Put in your name and your crush's name and we'll calculate the love percentage for you!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+combined_names = name1 + name2
+lower_case_names = combined_names.lower()
+g = lower_case_names.count("b")
+r = lower_case_names.count("l")
+i = lower_case_names.count("o")
+d = lower_case_names.count("d")
+first_digit = g + r + i + d
+l = lower_case_names.count("r")
+a = lower_case_names.count("a")
+v = lower_case_names.count("t")
+e = lower_case_names.count("e")
+second_digit = l + a + v + e
+love_score = int(str(first_digit) + str(second_digit))
+if love_score < 100 and love_score > 90:
+  print(f"Your score is {love_score}, you go together like coke and mentos.")
+elif love_score >= 40 and love_score <= 50:
+  print(f"Your score is {love_score}, you are alright together.")
+elif love_score >=30 and love_score < 40:
+  print(f"Your score is {love_score}, you guys are soulmates.")
+elif love_score >=10 and love_score < 30:
+  print(f"Your score is {love_score}, you guys are toxic for each other.")
+elif love_score > 50 and love_score < 60:
+  print(f"Your score is {love_score}, you guys are are meant to be platonic lovers.")
+elif love_score > 60 and love_score < 70:
+  print(f"Your score is {love_score}, aren't you guys bored of each other?")
+elif love_score > 80 and love_score < 90:
+  print(f"Your score is {love_score}, just marry each other already.")
+elif love_score > 100 and love_score <200:
+  print(f"Your score is {love_score}, you guys are perfectly matched.")
+else:
+  print(f"Your score is {love_score}, you guys are polar opposites but hey they attract each other.")
