@@ -1,0 +1,65 @@
+player_input = int(input("Хайч чулуу даавуу тоглоцгооё.\nЧулуу гаргах бол 0.\nДаавуу гаргах бол 1.\nХайч гаргах бол 2.\n"))
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+if player_input == 0:
+    print(rock)
+elif player_input == 1:
+    print(paper)
+elif player_input == 2:
+    print(scissors)
+else:
+    print("Please type 0, 1 or 2")
+
+import random
+
+computer_input = random.randint(0,2)
+
+print("Компьютерын хариу:\n")
+if computer_input == 0:
+  print(rock)
+elif computer_input == 1:
+  print(paper)
+else:
+  print(scissors)
+
+print("Шийдвэр:")
+
+if player_input == computer_input:
+  print("Та хоёр тэнцлээ!")
+elif player_input == 0 and computer_input == 1:
+  print("Та ялагдлаа!")
+elif player_input == 0 and computer_input == 2:
+  print("Та яллаа!")
+elif player_input == 1 and computer_input == 0:
+  print("Та яллаа!")
+elif player_input == 1 and computer_input == 2:
+  print("Та ялагдлаа!")
+elif player_input == 2 and computer_input == 0:
+  print("Та ялагдлаа!")
+else:
+  print("Та яллаа!")
